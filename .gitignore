@@ -1,2 +1,6 @@
 /node_modules
 /config/connections.js
+
+\.tmp/
+
+DER\.mwb\.bak
