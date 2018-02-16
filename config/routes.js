@@ -32,9 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
+  /*'/': {
     view: 'homepage'
-  },
+  },*/
 
   'GET /conexion/:site/:vendor': 'ConexionesController.validar',
   'POST /conexion/:site/:vendor': 'ConexionesController.obtenerInfo',
