@@ -20,8 +20,8 @@ module.exports = {
 				registrado: '',
 				ssid: client['ssid'],
 				rssi: client['rssi'],
-				latitud: client['location']['lat'],
-				longitud: client['location']['lng'],
+				lat: client['location']['lat'],
+				lng: client['location']['lng'],
 				sucursal_id: sucursal
 			});
 		}

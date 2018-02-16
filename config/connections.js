@@ -37,7 +37,7 @@ module.exports.connections = {
     host: '127.0.0.1',
     user: 'root',
     password: '',
-    database: 'aps'
+    database: 'db_aps'
   },
 
   /***************************************************************************
