@@ -15,13 +15,16 @@ module.exports = {
 		var rows = [];
 		for (index in data.data.observations) {
 			var client = data.data.observations[index];
+			if (client.location === null) {
+				continue;
+			}
 			rows.push({
 				mac: client['clientMac'],
 				registrado: '',
 				ssid: client['ssid'],
 				rssi: client['rssi'],
-				lat: client['location']['lat'],
-				lng: client['location']['lng'],
+				lat: client['location']['lat'] ? client['location']['lat'] : null,
+				lng: client['location']['lng'] ? client['location']['lng'] : null,
 				sucursal_id: sucursal
 			});
 		}
