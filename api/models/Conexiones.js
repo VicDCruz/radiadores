@@ -35,7 +35,6 @@ module.exports = {
 		},
 		ssid: {
 			type: 'string',
-			required: true,
 			size: '45'
 		},
 		lat: {
