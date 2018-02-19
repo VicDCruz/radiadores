@@ -23,8 +23,8 @@ module.exports = {
 				registrado: '',
 				ssid: client['ssid'],
 				rssi: client['rssi'],
-				lat: client['location']['lat'] ? client['location']['lat'] : null,
-				lng: client['location']['lng'] ? client['location']['lng'] : null,
+				lat: client['location']['lat'],
+				lng: client['location']['lng'],
 				sucursal_id: sucursal
 			});
 		}

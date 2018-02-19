@@ -39,12 +39,12 @@ module.exports = {
 			size: '45'
 		},
 		latitud: {
-			type: 'float',
+			type: 'string',
 			size: 10,
 			required: true
 		},
 		longitud: {
-			type: 'float',
+			type: 'string',
 			size: 10,
 			required: true
 		},
