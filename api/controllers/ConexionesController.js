@@ -14,9 +14,9 @@ module.exports = {
     var site;
     switch (site) {
       case 'acoxpa':
-        return 1;
+        return 40001;
       case 'universidad':
-        return 2;
+        return 40002;
       default:
         return false;
     }
@@ -28,7 +28,7 @@ module.exports = {
   imprimir: function (req, res) {
     var body = req.body;
     var sucursal = module.exports.getSite(req.params.site);
-    var vendor = module.exports.getSite(req.params.vendor);
+    var vendor = req.params.vendor;
 
     Conexiones.getAll(function(data) {
       if (!data) res.serverError('Error en la consulta', 'views/500.ejs');
